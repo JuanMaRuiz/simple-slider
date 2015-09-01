@@ -1,0 +1,77 @@
+body {
+	font-family: 'Helvetica', Arial, sans-serif;
+	color: #ccc;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	position: relative;
+}
+
+	.wrapper section {
+		height: auto;
+		overflow: hidden;
+	}
+
+#slider {
+	width: 940px;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	padding: 3px;
+	border: 1px #666 solid;
+	border-radius: 3px;	
+}
+
+	#slider img {
+		width: 940px;
+		height: 350px;
+	}
+
+.slide {
+	position: absolute;
+}
+
+.slide-copy {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+
+#prev, #next {
+	float: left;
+	margin-top: 130px;
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+}
+
+#prev {
+	margin-right: -45px;
+}
+
+#next {
+	margin-left: -45px;
+}
+
+/* All slide boxes are hide as init */
+.slide {
+	display: none;
+}
+
+/* Show first slide */ 
+.active {
+	display: block;
+}
